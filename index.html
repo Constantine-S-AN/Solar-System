@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar System</title>
+  <style>
+    :root {
+      --bg: radial-gradient(circle at 30% 20%, #1b2735, #090a0f 55%);
+      --text: #e5e7eb;
+      --accent: #fbbf24;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      padding: 24px;
+    }
+    .card {
+      width: min(720px, 100%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(9, 10, 15, 0.7);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(6px);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      color: rgba(229, 231, 235, 0.7);
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 12px rgba(251, 191, 36, 0.8);
+    }
+    h1 {
+      margin: 12px 0 8px;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin: 0 0 14px;
+      line-height: 1.6;
+      color: rgba(229, 231, 235, 0.85);
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    a.button {
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--text);
+      transition: all 0.2s ease;
+      background: rgba(255, 255, 255, 0.04);
+    }
+    a.button:hover {
+      border-color: rgba(251, 191, 36, 0.8);
+      box-shadow: 0 10px 24px rgba(251, 191, 36, 0.15);
+      transform: translateY(-1px);
+    }
+    .note {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: rgba(229, 231, 235, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow">
+      <span class="dot"></span>
+      Solar System
+    </div>
+    <h1>Coming soon.</h1>
+    <p>
+      This repository is set up for a Solar System visualization. Add your assets, scripts,
+      or build pipeline here and serve this page locally (for example, with
+      <code>python3 -m http.server 8000</code>) to begin iterating.
+    </p>
+    <div class="actions">
+      <a class="button" href="https://github.com/Constantine-S-AN/Solar-System" target="_blank" rel="noopener">
+        View repository
+      </a>
+    </div>
+    <div class="note">
+      Tip: replace this placeholder with your canvas/WebGL or Three.js scene and wire up controls.
+    </div>
+  </div>
+</body>
+</html>
